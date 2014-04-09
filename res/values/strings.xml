@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Chess</string>
+    <string name="play_button_text">Play</string>
+    <string name="play_button_response">&quot;Are you ready to play a game of chess?&quot;</string>
+    <string name="team_1">Red</string>
+    <string name="team_2">Blue</string>
+    <string name="team_3">Green</string>
+	<string name="team_radio_status">Team picked</string>
+</resources>
