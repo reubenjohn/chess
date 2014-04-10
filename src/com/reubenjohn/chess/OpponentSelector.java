@@ -17,10 +17,10 @@ import android.widget.Toast;
 public class OpponentSelector extends ListActivity {
 
 	String firstNames[] = { "Juliet", "Monique", "Rachelle", "Tara", "Sophia",
-			"Juliet", "Monique", "Rachelle", "Tara", "Sophia", "Juliet",
-			"Monique", "Rachelle", "Tara", "Sophia", "Juliet", "Monique",
-			"Rachelle", "Tara", "Sophia", "Juliet", "Monique", "Rachelle",
-			"Tara", "Sophia" };
+			"Juliet2", "Monique2", "Rachelle2", "Tara2", "Sophia2", "Juliet3",
+			"Monique3", "Rachelle3", "Tara3", "Sophia3", "Juliet4", "Monique4",
+			"Rachelle4", "Tara4", "Sophia4", "Juliet5", "Monique5",
+			"Rachelle5", "Tara5", "Sophia5" };
 	ArrayAdapter<String> firstNamesAdapter;
 	private String itemSelected;
 
@@ -56,35 +56,38 @@ public class OpponentSelector extends ListActivity {
 					int arg2, long position) {
 				itemSelected = parent.getItemAtPosition((int) position)
 						.toString();
-				
+
 				AlertDialog.Builder builder = new AlertDialog.Builder(
 						OpponentSelector.this);
-				builder.setMessage(getResources().getString(
-						R.string.opponent_removal_confirmation))
+				builder.setMessage(
+						getResources().getString(
+								R.string.opponent_removal_confirmation))
 						.setCancelable(true)
 						.setPositiveButton(R.string.opponent_removal_P,
-						new DialogInterface.OnClickListener() {
+								new DialogInterface.OnClickListener() {
 
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								firstNamesAdapter.remove(itemSelected);
-								firstNamesAdapter.notifyDataSetChanged();
-							}
-						})
+									@Override
+									public void onClick(DialogInterface dialog,
+											int which) {
+										firstNamesAdapter.remove(itemSelected);
+										firstNamesAdapter
+												.notifyDataSetChanged();
+									}
+								})
 						.setNegativeButton(R.string.opponent_removal_N,
-						new DialogInterface.OnClickListener() {
+								new DialogInterface.OnClickListener() {
 
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								dialog.cancel();
-							}
-						})
-						.setView(getLayoutInflater().inflate(R.layout.test_dialog, null))
-						.setIcon(R.drawable.ic_launcher)
-						.show();
-						
+									@Override
+									public void onClick(DialogInterface dialog,
+											int which) {
+										dialog.cancel();
+									}
+								})
+						.setView(
+								getLayoutInflater().inflate(
+										R.layout.test_dialog, null))
+						.setIcon(R.drawable.ic_launcher).show();
+
 				return false;
 
 			}

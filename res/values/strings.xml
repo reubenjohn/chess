@@ -16,5 +16,6 @@
     <string name="opponent_removal_confirmation">Are you sure you want to remove this opponent?</string>
     <string name="opponent_removal_P">Yes, remove her</string>
     <string name="opponent_removal_N">No! I like her!</string>
+    <string name="avatar_label">Pick your Avatar</string>
 
 </resources>
