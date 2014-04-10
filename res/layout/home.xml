@@ -1,80 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/test_dialog"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    >
-    
-    <Button
-        android:id="@+id/play_button"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="@string/play_button_text"
-        />
-    
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
     <LinearLayout
-    	android:layout_height="wrap_content"
-    	android:layout_width="fill_parent"
-    	android:orientation="horizontal" >
-    	<TextView
-        	android:layout_height="wrap_content"
-        	android:layout_width="0dp"
-        	android:layout_weight="1"
-        	android:gravity="center"
-        	android:background="@color/team_1"
-        	android:textColor="@color/team_text"
-        	android:text="@string/team_1" />
-    	<TextView
-        	android:layout_height="wrap_content"
-        	android:layout_width="0dp"
-        	android:layout_weight="1"
-        	android:gravity="center"
-        	android:background="@color/team_2"
-        	android:textColor="@color/team_text"
-        	android:text="@string/team_2" />
-    	<TextView
-        	android:layout_height="wrap_content"
-        	android:layout_width="0dp"
-        	android:layout_weight="1"
-        	android:gravity="center"
-        	android:background="@color/team_3"
-        	android:textColor="@color/team_text"
-        	android:text="@string/team_3" />
-	</LinearLayout>
-	
-	<RadioGroup
-	    android:layout_height="wrap_content"
-	    android:layout_width="fill_parent"
-	    android:id="@+id/team_selector"
-	    android:orientation="horizontal">
-	    
-	    <RadioButton
-	        android:id="@+id/red_radio_button"
-	        android:layout_height="wrap_content"
-	        android:layout_width="0dp"
-	        android:layout_weight="1"
-        	android:layout_marginLeft="35dp"  />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 
-	    <RadioButton
-	        android:id="@+id/blue_radio_button"
-	        android:layout_width="0dp"
-	        android:layout_height="wrap_content"
-	        android:layout_weight="1"
-        	android:layout_marginLeft="35dp" />
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/play_button" />
 
-	    <RadioButton
-	        android:id="@+id/green_radio_button"
-	        android:layout_height="wrap_content"
-	        android:layout_width="0dp"
-	        android:layout_weight="1"
-	        android:gravity="center|left"
-        	android:layout_marginLeft="35dp" />
-	</RadioGroup>
-	
-	<TextView
-	    android:layout_height="wrap_content"
-	    android:layout_width="wrap_content"
-	    android:gravity="center"
-	    android:text="@string/team_radio_status"
-	    />
+        <CheckBox
+            android:id="@+id/french_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:checked="false"
+            android:text="@string/french_checkFRENCH" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/team_1"
+            android:gravity="center"
+            android:text="@string/team_1"
+            android:textColor="@color/team_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/team_2"
+            android:gravity="center"
+            android:text="@string/team_2"
+            android:textColor="@color/team_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/team_3"
+            android:gravity="center"
+            android:text="@string/team_3"
+            android:textColor="@color/team_text" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/team_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/team_radio_button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/team_radio_button_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/team_radio_button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:gravity="center|left" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/team_radio_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/team_text_background"
+        android:gravity="center"
+        android:text="@string/team_radio_status"
+        android:textColor="@color/team_status_text" />
+
+    <Button
+        android:id="@+id/select_opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="selectOpponent"
+        android:text="@string/select_opponent_button" />
+
 </LinearLayout>

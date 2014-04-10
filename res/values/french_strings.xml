@@ -1,0 +1,11 @@
+<resources>
+    <string name="french_app_name">Echecs</string>
+    <string name="french_play_button">Jouer</string>
+    <string name="french_play_button_response">Etes-vous prêt à jouer une partie d\'échecs?</string>
+    <string name="french_team_1">Rouge</string>
+    <string name="french_team_2">Vert</string>
+    <string name="french_team_3">Bleu</string>
+	<string name="french_team_radio_status">Couleur de l\'équipe</string>
+	<string name="french_french_checkENGLISH">I speak french</string>
+	<string name="french_french_checkFRENCH">Je parle français</string>
+</resources>

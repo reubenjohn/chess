@@ -1,10 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Chess</string>
-    <string name="play_button_text">Play</string>
+    <string name="opponent_activity_name">Opponents</string>
+    <string name="play_button">Play</string>
     <string name="play_button_response">&quot;Are you ready to play a game of chess?&quot;</string>
+    <string name="select_opponent_button">Select opponent</string>
     <string name="team_1">Red</string>
-    <string name="team_2">Blue</string>
-    <string name="team_3">Green</string>
-	<string name="team_radio_status">Team picked</string>
+    <string name="team_2">Green</string>
+    <string name="team_3">Blue</string>
+    <string name="team_radio_status">Team color</string>
+    <string name="french_checkENGLISH">I speak french</string>
+    <string name="french_checkFRENCH">Je parle Francais</string>
+    <string name="opponent_selection_prefix">&quot;Opponent selected: &quot;</string>
+    <string name="opponent_removal_confirmation">Are you sure you want to remove this opponent?</string>
+    <string name="opponent_removal_P">Yes, remove her</string>
+    <string name="opponent_removal_N">No! I like her!</string>
+
 </resources>
